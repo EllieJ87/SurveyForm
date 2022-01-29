@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  background-image: url("images/form-geometric.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Genos", sans-serif;
+}
+
+.container {
+  width: 100%;
+  margin: 3rem auto 0 auto;
+}
+
+h1 {
+  color: #331832;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1em;
+  padding-top: 1rem;
+}
+
+p {
+  color: #D81E5B;
+  font-style: italic;
+  text-align: center;
+  line-height: 1;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+form {
+  background-color: rgba(240, 84, 79, 0.5);
+  padding: 10px;
+}
+
+form form .form-control::-webkit-input-placeholder {
+  color: #331832;
+  font-style: italic;
+}
+
+form form .form-control::-moz-placeholder {
+  color: #331832;
+  font-style: italic;
+}
+
+form form .form-control:-ms-input-placeholder {
+  color: #331832;
+  font-style: italic;
+}
+
+form form .form-control:placeholder {
+  color: #331832;
+  font-style: italic;
+}
+
+form label {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FDF0D5;
+}
+
+form small {
+  text-transform: none;
+}
+
+form .form-label {
+  margin-bottom: 0.2rem;
+  margin-top: 0.5rem;
+}
+
+form .form-control {
+  background-color: rgba(198, 216, 211, 0.5);
+  border: none;
+}
+
+form .form-select {
+  background-color: rgba(198, 216, 211, 0.5);
+  border: none;
+}
+
+form .form-check-label {
+  text-transform: none;
+  color: #331832;
+  font-weight: bold;
+}
+
+form textarea {
+  margin-bottom: 10px;
+}
+
+form .form-check-input:checked {
+  background-color: #D81E5B;
+  border-color: #D81E5B;
+}
+
+form #submit {
+  margin-top: 10px;
+  width: 100%;
+  text-transform: uppercase;
+  color: #FDF0D5;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background-color: rgba(216, 30, 91, 0.8);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+form #submit:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #C6D8D3;
+  border-radius: 0.25rem;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+form #submit:hover, form #submit:focus, form #submit:active {
+  color: #D81E5B;
+}
+
+form #submit:hover:before, form #submit:focus:before, form #submit:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.container-fluid {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+footer {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.footer-text {
+  color: #331832;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.fa {
+  font-size: 2em;
+  text-decoration: none;
+  display: inline-block;
+  color: #F0544F;
+  font-weight: bold;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.fa {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.fa:hover, .fa:focus, .fa:active {
+  -webkit-animation-name: hvr-icon-buzz;
+  animation-name: hvr-icon-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  color: #D81E5B;
+}
+
+.fa-linkedin-square {
+  padding: 0 5px 0 10px;
+}
+
+.fa-github {
+  padding: 0 10px;
+}
+
+/* Icon Buzz */
+@-webkit-keyframes hvr-icon-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+@keyframes hvr-icon-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .footer-text {
+    font-size: 1.2em;
+  }
+  .fa {
+    font-size: 2em;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 572px) {
+  .footer-text {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 5px;
+  }
+  .footer-links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 5px;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 823px) and (orientation: landscape) {
+  footer {
+    position: relative;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

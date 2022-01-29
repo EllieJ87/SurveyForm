@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Survey Form</title>
+
+        <!-- FAVICON -->
+        <link rel="icon" type="image/jpg" href="faicon/form-favicon-16x16.jpg" sizes="16x16">
+        <link rel="icon" type="image/jpg" href="faicon/form-favicon-32x32.jpg" sizes="32x32">
+        <link rel="icon" type="image/jpg" href="faicon/form-favicon-96x96.jpg" sizes="96x96">
+
+        <!-- BOOT STRAP LINK -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        <!-- CSS LINK -->        
+        <link rel="stylesheet" href="styles.css">
+        
+        <!-- FONT AWESOME LINK -->
+        <script src="https://kit.fontawesome.com/4f133ed2d1.js" crossorigin="anonymous"></script>
+        
+    </head>
+
+    <body>
+        
+        <div class="container">
+            <div class="row">
+                <div id="wrapper" class="col">
+                    
+                    <header>
+                        <h1 id="title">The Fun Survey Form</h1>
+                        <p id="description">A quick and fun survery form!</p>
+                    </header>
+                    
+                    <form id="survey-form">
+                        <div class="row">
+                            <label for="name" class="form-label" id="name-label">Name</label>
+                            <div class="col">
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <label for="email" class="form-label" id="email-label">Email</label>
+                            <div class="col">
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <label for="age" class="form-label" id="number-label">Age <small>(optional)</small></label>
+                            <div class="col">
+                                <input type="number" class="form-control" id="number" min="18" max="99" placeholder="Age">
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <label for="inputState" class="form-label">If you could have one of these superpowers, which one would you choose?</label>
+                            <div class="col">
+                                <select id="dropdown" class="form-select">
+                                    <option selected>Pick your superpower...</option>
+                                    <option>Be invisible whenever you want</option>
+                                    <option>Superhuman Strength</option>
+                                    <option>Talk to animals</option>
+                                    <option>Read minds</option>
+                                    <option>Be able to fly</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <fieldset class="row">
+                            <label class="form-label">If you could travel in time, what would you want to see?</label>
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="travelRadio" id="travelRadio1" value="travelRadio1" checked>
+                                    <label class="form-check-label" for="travelRadio1">The Past</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="travelRadio" id="travelRadio2" value="travelRadio2">
+                                    <label class="form-check-label" for="travelRadio2">The Future</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="travelRadio" id="travelRadio3" value="travelRadio3">
+                                    <label class="form-check-label" for="travelRadio3">
+                                        There is enough in the present</label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="row">
+                            <label class="form-label">Have you ever... (tick all that applies)</label>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="everCheck" value="everCheck1" checked>
+                                    <label class="form-check-label" for="everCheck1">Had a crush on your boss</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="everCheck1" value="everCheck1">
+                                    <label class="form-check-label" for="everCheck1">Peed in the swimming pool</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="everCheck" value="everCheck1">
+                                    <label class="form-check-label" for="everCheck1">Taken shampoo and condition from hotels</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="everCheck" value="everCheck1">
+                                    <label class="form-check-label" for="everCheck1">Told barefaced lies to your mother</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="everCheck1" value="everCheck1">
+                                    <label class="form-check-label" for="everCheck1">Denied receiving work emails when in fact you did</label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="row">
+                            <label class="form-label">Describe your mood today</label>
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="moodRadios" id="moodRadios1" value="moodRadios1" checked>
+                                    <label class="form-check-label" for="moodRadios1">Sunshine</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="moodRadios" id="moodRadios2" value="moodRadios2">
+                                    <label class="form-check-label" for="moodRadios2">Cloudy</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="moodRadios" id="moodRadios3" value="moodRadios3">
+                                    <label class="form-check-label" for="moodRadios3">
+                                        Rainy</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="moodRadios" id="moodRadios4" value="moodRadios4">
+                                    <label class="form-check-label" for="moodRadios4">
+                                        Thundery</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="moodRadios" id="moodRadios5" value="moodRadios5">
+                                    <label class="form-check-label" for="moodRadios5">
+                                        Rainbow</label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div class="row">
+                            <label for="exampleFormControlTextarea1" class="form-label">What would you like to see more of?</label>
+                            <div class="col">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </div>
+                        
+                        <button id="submit" type="submit" class="btn">Submit Survey</button>
+                    </form>
+                </div>
+            </div>
+            
+            <footer class="container-fluid">
+                <div class="row">
+                    <div class="col-sm footer-links">
+                        <a href="https://www.linkedin.com/in/ellie-judge-45b00689/" class="fa fa-linkedin-square" aria-hidden="true" target="_blank"></a>
+                        <a href="https://github.com/EllieJ87" class="fa fa-github" aria-hidden="true" target="_blank"></a> 
+                    </div>
+                    <div class="col-sm">
+                        <span class="footer-text">Survey Form &copy;EJ@2022</span>
+                    </div>
+                </div>
+              </footer>
+        </div>
+
+        <!-- JQUERY & BOOTSTRAP.JS CDNS FILES -->        
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        
+    </body>
+</html>

@@ -8,7 +8,7 @@ The overall aim was to acheive a Survey Form page, this was only focusing on usi
 
 ![The Fun Survey Form](images/responsive-design.jpg) 
 
-A deployed version of my website can be found [here](https://elliej87.github.io/TributePage/)
+A deployed version of my website can be found [here](https://elliej87.github.io/SurveyForm/)
 
 This domain will allow you to access the Tribute Page website.
 
@@ -275,7 +275,7 @@ The hosting platform that I've used for my project is GitHub Pages. To deploy my
 
 ### <a name="repositorylink">Repository Link</a>
 
-[Tribute Page](https://elliej87.github.io/TributePage/)
+[Survey Form](https://elliej87.github.io/SurveyForm/)
 
 ### <a name="runningcodelocally">Running Code Locally</a>
 

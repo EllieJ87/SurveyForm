@@ -27,7 +27,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    max-width: 100vw;
     background-image: url('images/form-geometric.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,8 +37,11 @@ body {
 }
 
 .container{
-    width: 100%;
-    margin: 3rem auto 0 auto;
+    margin-top: 3rem;
+}
+
+#wrapper {
+    padding-bottom: 1.5rem;
 }
 
 
@@ -177,12 +180,15 @@ form {
 }
 
 .container-fluid {
-    padding-bottom: 1rem;
+    bottom: 0;
+    left: 0;
+    position: relative;
     padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 footer {
-        align-content: center;
+    align-content: center;
 }
 
 .footer-text {
@@ -265,12 +271,14 @@ footer {
 }
 
 @media (min-width: 768px) {
+    body {
+        max-height: 100vh;
+    }
 
     footer {
-        position: absolute;
-        right: 0;
-        bottom: 0;
+        position: fixed;
         left: 0;
+        bottom: 0;
     }
 
     .footer-text {
